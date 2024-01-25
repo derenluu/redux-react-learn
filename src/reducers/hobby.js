@@ -11,13 +11,14 @@ const hobbyReducer = (state = initialState, action) => {
                 list: [...state.list, action.payload],
             }
         case 'SET_ACTIVE_HOBBY':
+            const newActiveId = action.payload.id;
             return {
-                state
+                ...state,
+                activeId: newActiveId
             }
         default:
-            break;
+            return state;
     }
-    return state;
 }
 
 export default hobbyReducer;

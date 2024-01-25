@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes, { func } from 'prop-types'; // ES6
+import PropTypes from 'prop-types'; // ES6
 import './HobbyList.css'
 
 HobbyList.propTypes = {
